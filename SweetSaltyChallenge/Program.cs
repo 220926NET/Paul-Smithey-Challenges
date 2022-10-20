@@ -31,10 +31,10 @@ Console.WriteLine("decide how many numbers are printed per line up to a maximum 
 Console.WriteLine("the two numbers is limited to 1000.");
 Console.WriteLine("");
 
-//loop through the program until the user correctly enters information
-while(!exitApp)
+
+while(!exitApp)//loop until the exitApp boolean equals true
 {
-    while(!goodAnswer)
+    while(!goodAnswer)//loop until the user correctly enters information
     {
         try{//try in case of bad data entry
             Console.WriteLine("Please enter the low number of the range.");
@@ -65,7 +65,7 @@ while(!exitApp)
         }
     }
     goodAnswer = false;
-    while(!goodAnswer)
+    while(!goodAnswer)//loop until the user correctly enters information
     {
         try{//try in case of bad data entry
             goodAnswer = false;
